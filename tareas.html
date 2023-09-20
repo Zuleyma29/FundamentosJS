@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas con Javascript</title>
+
+    <style>
+        /* Estilos Generales*/
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8ff94d;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #a6e999;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        /*Titulos */
+        h1, h2 {
+            color: #333;
+        }
+        /* Formulario*/
+        #formulario {
+            margin-bottom: 20px;
+        }
+        /*Estilo del boton */
+        button {
+            padding: 10px 20px;
+            background-color: #2255d8;
+            color: #070707;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        textarea {
+            width: 70%;
+            padding: 1px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        /* Estilos para la lista de tareas */
+    #tareas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    #tareas li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+        
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1>Lista de Tareas en Javascript</h1>
+        <div id ="formulario">
+        <h2> Ingresa Tarea</h2>
+        <textarea name="" id="inputTarea" cols="30" rows="10"></textarea>
+        <input type="time" name="" id="tiempo">
+        <h3>Hora</h3>
+        <button onclick="addTarea()">Agregar Tarea</button>
+    </div>
+    <div id= "tareas">
+        <h2>Mis tareas</h2>
+        <ul></ul>
+        </div>
+    </div>
+    <script src="./tareas.js"></script>
+</body>
+</html>
